@@ -3,7 +3,7 @@
 body {
     font: normal 1rem Arial;
     animation: mudarCor 6s infinite;
-    height: 100vh;
+    height: 100dvh;
     margin: 0;
     display: flex;
     flex-direction: column;
