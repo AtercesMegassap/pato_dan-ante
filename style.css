@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+body {
+    font: normal 1rem Arial;
+    animation: mudarCor 6s infinite;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+section {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    padding: 15px;
+    width: 500px;
+    margin: 20px 0;
+}
+
+div#pato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img#pato {
+    width: 60%;
+    height: fit-content;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+@keyframes mudarCor {
+    0% {
+        background-color: #dd3535;  /* Cor inicial: Vermelho */
+    }
+    25% {
+        background-color: #35dd35; /* Cor intermediária: Verde */
+    }
+    50% {
+        background-color: #3535dd; /* Cor final: Azul */
+    }
+    75% {
+        background-color: #35dd35; /* Cor intermediária: Verde */
+    }
+    100% {
+        background-color: #dd3535; /* Cor inicial: Vermelho */
+    }
+}
