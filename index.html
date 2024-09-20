@@ -9,10 +9,17 @@
 <body>
     <header>Pato Dançante</header>
     <section>
-        <div id="pato">
+        <div id="botoes">
+            <input type="button" value="Gif de Pato Mode" id="patogifbtn" onclick="patogif()" style="animation: mudarCor 6s infinite;"> 
+            <input type="button" value="ASCII Pato Mode" id="patoasciibtn" onclick="patoASCII()">
+        </div>
+        <div id="pato"  style="display: none;">
             <img src="img/XOsX.gif" alt="pato" id="pato">
         </div>
+
+        <div id="ascii-animation"></div>
     </section>
     <footer>&copy; Ryan Pontes</footer>
+    <script src="script.js"></script>
 </body>
 </html>

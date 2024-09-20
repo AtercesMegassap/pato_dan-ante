@@ -2,13 +2,13 @@
 
 body {
     font: normal 1rem Arial;
-    animation: mudarCor 6s infinite;
     height: 100dvh;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #000;
 }
 
 header {
@@ -21,21 +21,47 @@ header {
 }
 
 section {
-    background: rgba(255, 255, 255, 0);
+    min-height: 55dvh;
     border-radius: 12px;
     padding: 15px;
     margin: 20px 0;
+}
+
+div#botoes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+input {
+    width: 150px;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background: blueviolet;
+    color: white;
+    box-shadow: 2px 2px 12px rgba(255, 255, 255, 0.7);
 }
 
 div#pato {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 img#pato {
     width: 60%;
     height: fit-content;
+}
+
+div#ascii-animation {
+    font-size: 10px;
+    line-height: 0.3rem;
+    font-family: monospace;
+    white-space: pre;
+    text-align: center;
+    animation: mudarCorPato 6s infinite;
 }
 
 footer {
@@ -60,5 +86,41 @@ footer {
     }
     100% {
         background-color: #dd3535; /* Cor inicial: Vermelho */
+    }
+}
+
+@keyframes mudarCorPato {
+    0% {
+        color: #dd3535;  /* Cor inicial: Vermelho */
+    }
+    25% {
+        color: #35dd35; /* Cor intermediária: Verde */
+    }
+    50% {
+        color: #3535dd; /* Cor final: Azul */
+    }
+    75% {
+        color: #35dd35; /* Cor intermediária: Verde */
+    }
+    100% {
+        color: #dd3535; /* Cor inicial: Vermelho */
+    }
+}
+
+@keyframes mudarCorSombra {
+    0% {
+        box-shadow: 2px 2px 12px rgba(42, 177, 42, 0.7);  /* Cor inicial: Vermelho */
+    }
+    25% {
+        box-shadow: 2px 2px 12px rgba(255, 61, 61, 0.7); /* Cor intermediária: Verde */
+    }
+    50% {
+        box-shadow: 2px 2px 12px rgba(255, 198, 27, 0.7); /* Cor final: Azul */
+    }
+    75% {
+        box-shadow: 2px 2px 12px rgba(255, 61, 61, 0.7); /* Cor intermediária: Verde */
+    }
+    100% {
+        box-shadow: 2px 2px 12px rgba(42, 177, 42, 0.7); /* Cor inicial: Vermelho */
     }
 }
