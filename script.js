@@ -876,7 +876,6 @@ function patoASCII() {
     patogifbtn.removeAttribute('style');
     patoasciibtn.removeAttribute('style');
     patogifbtn.style.animation = 'mudarCor 6s infinite';
-    patoasciibtn.style.animation = 'mudarCor 6s infinite';
 }
 
 let frameIndex = 0;
